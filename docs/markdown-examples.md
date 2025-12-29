@@ -83,3 +83,19 @@ This is a details block.
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+
+1. 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 
+2. 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 
+3. 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 
+
+- 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 
+- 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 
+- 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 代码块悬停样式：https://github.com/shikijs/shiki/issues/123 https://github.com/shikijs/shiki/pull/106 
+
+```bash
+echo "Hello World"
+```
+
+```console
+Hello World
+```

@@ -1,0 +1,14 @@
+/* 匹配 console 代码块 */
+.language-console {
+  position: relative;
+  margin-top: -16px !important; 
+  border-top: 1.5px dashed #ccc; 
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  overflow: visible; /* 确保伪元素可见 */
+}
+
+/* 隐藏复制按钮 */
+.language-console .copy {
+  display: none;
+}

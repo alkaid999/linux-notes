@@ -1,0 +1,35 @@
+/* 设置列表相对定位，确保竖线可以准确定位 */
+.vp-doc ul li,
+.vp-doc ol li  {
+  position: relative;
+}
+
+/* 在无序列表正下方添加竖线 */
+.vp-doc ul li::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 27px;
+  bottom: 0; 
+  width: 1px;
+  background-color: #d5d5d5;
+  z-index: 1;
+}
+
+/* 在有序列表正下方添加竖线 */
+.vp-doc ol li::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 27px; 
+  bottom: 0; 
+  width: 1px;
+  background-color: #d5d5d5; 
+  z-index: 1;
+}
+
+/* 隐藏所有内嵌（嵌套）列表项的竖线 */
+.vp-doc ol li li::before,
+.vp-doc ul li li::before {
+  display: none !important; /* 强制隐藏内嵌li的竖线 */
+}
