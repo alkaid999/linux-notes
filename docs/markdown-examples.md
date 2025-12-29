@@ -99,3 +99,41 @@ echo "Hello World"
 ```console
 Hello World
 ```
+
+:::: field-group
+
+
+
+::: field name="theme" type="ThemeConfig" required default="{ base: '/' }"
+主题配置
+:::
+
+::: field name="enabled" type="boolean" optional default="true"
+是否启用
+:::
+
+::: field name="callback" type="(...args: any[]) => void" optional default="() => {}"
+回调函数
+:::
+
+::: field name="other" type="string" deprecated
+已弃用属性
+:::
+
+::::
+
+
+---
+
+::: steps
+
+1. 步骤 1
+
+	相关内容
+2. **步**骤 2
+
+	**相关内容**
+
+:::
+
+  **相关内容** 粗体？

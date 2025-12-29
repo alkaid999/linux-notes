@@ -1,5 +1,6 @@
 import Teek from "vitepress-theme-teek";
-import './styles/index.scss'; // 引入自定义样式
+import type { Theme } from "vitepress"; // 引入 VitePress 主题类型
+import "./styles/index.scss"; // 引入自定义样式
 
 // Teek 在线主题包引用（需安装 Teek 在线版本）
 import "vitepress-theme-teek/index.css";
@@ -26,8 +27,19 @@ import "vitepress-theme-teek/vp-plus/scrollbar.scss"; // 滚动条样式
 
 import "./components/guangbiaoTX/guangbiaoTX.scss"; // 鼠标拖尾星星动画样式
 import { useGuangbiaoTX } from "./components/guangbiaoTX/useGuangbiaoTX"; // 鼠标拖尾星星动画
-useGuangbiaoTX(); // 调用鼠标拖尾星星动画
 
-export default {
-	extends: Teek,
+import VPField from "./components/VPField.vue"; // 引入 Field 容器组件
+
+// 定义 VitePress 主题
+const theme: Theme = {
+  extends: Teek,
+  enhanceApp: ({ app }: any) => {
+    app.component("VPField", VPField);
+
+    // 初始化鼠标拖尾星星动画
+    useGuangbiaoTX();
+  },
 };
+
+// 导出 VitePress 主题
+export default theme;

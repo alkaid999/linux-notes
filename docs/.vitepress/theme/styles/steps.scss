@@ -1,0 +1,91 @@
+/**
+ * Steps 容器样式
+ * 适配 VitePress 主题和 Teek 主题色
+ */
+
+.vp-doc .vp-steps {
+  margin: 16px 0;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--vp-c-bg-soft);
+  transition: background-color var(--vp-t-color);
+}
+
+.vp-doc .vp-steps > :where(ol,ul) {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.vp-doc .vp-steps > :where(ol,ul) > li {
+  position: relative;
+  min-height: 28px;
+  padding-left: 44px;
+  margin-bottom: 16px;
+  line-height: 28px;
+}
+
+.vp-doc .vp-steps > :where(ol,ul) > li::before {
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--vp-c-bg);
+  text-align: center;
+  content: counter(list-item);
+  background-color: var(--teek-brand-color, var(--vp-c-brand));
+  border: solid 2px var(--teek-brand-color, var(--vp-c-brand));
+  border-radius: 100%;
+  transition: var(--vp-t-color);
+  transition-property: color, background-color, border-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'LXGWWenKaiMono-Bold', 'Consolas Bold', 'Monaco Bold', 'Courier New Bold', monospace;
+}
+
+.vp-doc .vp-steps > :where(ol,ul) > li:not(:last-of-type)::after {
+  position: absolute;
+  inset-inline-start: 14px;
+  top: 34px;
+  bottom: -10px;
+  width: 2px;
+  content: "";
+  background-color: var(--teek-brand-color, var(--vp-c-brand));
+  transition: background-color var(--vp-t-color);
+  opacity: 0.6;
+}
+
+.vp-doc .vp-steps > :where(ol,ul) > li > :first-child {
+  margin-top: 0;
+}
+
+.vp-doc .vp-steps > :where(ol,ul) > li > :first-child:where(h1,h2,h3,h4,h5,h6) {
+  padding-top: 0;
+  border-top: none;
+}
+
+.vp-doc .vp-steps > :where(ol,ul) > li > :first-child:where(p) {
+  line-height: 28px;
+}
+
+.vp-doc .vp-steps > :where(ol,ul) > li + li {
+  margin-top: 1px;
+}
+
+/* 暗色模式适配 */
+html.dark .vp-doc .vp-steps {
+  background-color: var(--vp-c-bg-mute);
+}
+
+html.dark .vp-doc .vp-steps > :where(ol,ul) > li::before {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+html.dark .vp-doc .vp-steps > :where(ol,ul) > li:hover::before {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}

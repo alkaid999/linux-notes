@@ -1,0 +1,82 @@
+/**
+ * 字体配置
+ * 使用 LXGWWenKaiMono-Regular.ttf 作为等宽字体
+ */
+
+/* 定义常规字体 */
+@font-face {
+  font-family: 'LXGWWenKaiMono';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/LXGWWenKaiMono-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* 定义粗体字体，使用系统默认粗体等宽字体 */
+@font-face {
+  font-family: 'LXGWWenKaiMono-Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Consolas Bold'), local('Monaco Bold'), local('Courier New Bold'), local('monospace');
+  font-display: swap;
+}
+
+/* 全局字体设置 */
+body {
+  font-family: 'LXGWWenKaiMono', 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* 粗体文本设置 */
+b, strong {
+  font-family: 'LXGWWenKaiMono-Bold', 'Consolas Bold', 'Monaco Bold', 'Courier New Bold', monospace;
+  font-weight: bold;
+}
+
+/* 代码块字体 */
+.vp-code,
+.vp-code span,
+.vp-doc [class*="language-"] pre,
+.vp-doc [class*="language-"] code {
+  font-family: 'LXGWWenKaiMono', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+}
+
+/* 行内代码 */
+.vp-doc code {
+  font-family: 'LXGWWenKaiMono', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+}
+
+/* 行内代码中的粗体 */
+.vp-doc code b,
+.vp-doc code strong {
+  font-family: 'LXGWWenKaiMono-Bold', 'Consolas Bold', 'Monaco Bold', 'Courier New Bold', monospace;
+  font-weight: bold;
+}
+
+/* 步骤容器中的数字 */
+.vp-doc .vp-steps > :where(ol,ul) > li::before {
+  font-family: 'LXGWWenKaiMono', 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* 表格内容 */
+.vp-doc table {
+  font-family: 'LXGWWenKaiMono', 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* 表格中的粗体 */
+.vp-doc table b,
+.vp-doc table strong {
+  font-family: 'LXGWWenKaiMono-Bold', 'Consolas Bold', 'Monaco Bold', 'Courier New Bold', monospace;
+  font-weight: bold;
+}
+
+/* 引用块 */
+.vp-doc blockquote {
+  font-family: 'LXGWWenKaiMono', 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* 引用块中的粗体 */
+.vp-doc blockquote b,
+.vp-doc blockquote strong {
+  font-family: 'LXGWWenKaiMono-Bold', 'Consolas Bold', 'Monaco Bold', 'Courier New Bold', monospace;
+  font-weight: bold;
+}
