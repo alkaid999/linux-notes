@@ -6,16 +6,16 @@
       to bottom,
       transparent 0,
       transparent calc(1.5em - 1px),
-      var(--vp-doc-blog-bg, rgba(0,0,0,0.03)) calc(1.25em - 1px),
-      var(--vp-doc-blog-bg, rgba(0,0,0,0.03)) 1.25em
+      var(--vp-doc-blog-bg, rgba(0,0,0,0.02)) calc(1.25em - 1px),
+      var(--vp-doc-blog-bg, rgba(0,0,0,0.02)) 1.25em
     ),
     /* 竖线 */
     linear-gradient(
       to right,
       transparent 0,
       transparent calc(1.5em - 1px),
-      var(--vp-doc-blog-bg, rgba(0,0,0,0.03)) calc(1.25em - 1px),
-      var(--vp-doc-blog-bg, rgba(0,0,0,0.03)) 1.25em
+      var(--vp-doc-blog-bg, rgba(0,0,0,0.02)) calc(1.25em - 1px),
+      var(--vp-doc-blog-bg, rgba(0,0,0,0.02)) 1.25em
     );
   background-size: 1.5em 1.5em; /* 正方形格子！ */
   background-position: 0 0;

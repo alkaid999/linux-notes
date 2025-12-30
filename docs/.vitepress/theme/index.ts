@@ -29,15 +29,19 @@ import "./components/guangbiaoTX/guangbiaoTX.scss"; // 鼠标拖尾星星动画�
 import { useGuangbiaoTX } from "./components/guangbiaoTX/useGuangbiaoTX"; // 鼠标拖尾星星动画
 
 import VPField from "./components/VPField.vue"; // 引入 Field 容器组件
+import "vitepress-markdown-timeline/dist/theme/index.css"; // 引入时间线插件样式
+import { initComponent } from 'vitepress-mermaid-preview/component'; // 初始化 mermiad 插件组件
+import 'vitepress-mermaid-preview/dist/index.css'; // 引入 mermiad 插件样式
+import { LiteTree } from '@lite-tree/vue' // 引入 LiteTree 组件
 
 // 定义 VitePress 主题
 const theme: Theme = {
   extends: Teek,
   enhanceApp: ({ app }: any) => {
-    app.component("VPField", VPField);
-
-    // 初始化鼠标拖尾星星动画
-    useGuangbiaoTX();
+    app.component("VPField", VPField); // 注册 Field 容器组件
+    useGuangbiaoTX(); // 初始化鼠标拖尾星星动画
+	initComponent(app); // 初始化 mermiad 插件组件
+	app.component('LiteTree', LiteTree); // 注册 LiteTree 组件
   },
 };
 
