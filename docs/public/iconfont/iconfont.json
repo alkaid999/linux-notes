@@ -1,0 +1,16 @@
+{
+  "id": "3243406",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12463174",
+      "name": "linux",
+      "font_class": "linux",
+      "unicode": "e80b",
+      "unicode_decimal": 59403
+    }
+  ]
+}
