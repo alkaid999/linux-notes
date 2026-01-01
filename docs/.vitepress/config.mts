@@ -13,7 +13,14 @@ const teekConfig = defineTeekConfig({
   vpHome: false, // 关闭 VitePress 首页风格
   backTop: { content: "icon" }, // 回到顶部将实时数字换成一个火箭图标
   toComment: { enabled: false }, // 关闭滚动滚动到评论区按钮
-  codeBlock: { langTextTransform: "capitalize" }, // 代码块语言文本转换为首字母大写
+  // 代码块配置
+  codeBlock: {
+    langTextTransform: "capitalize", // 代码块语言文本转换为首字母大写
+    collapseHeight: 700, // 折叠高度，超过此高度的代码块将折叠
+	overlay: true, // 代码块底部是否显示展开/折叠遮罩层
+    overlayHeight: 400, // 当出现遮罩层时，指定代码块显示高度，当 overlay 为 true 时生效
+	copiedDone: TkMessage => TkMessage.success("复制成功！"), // 复制成功提示
+  },
   sidebarTrigger: true, // 开启边栏展开/折叠触发器
   articleUpdate: { enabled: false }, // 关闭文章最近更新栏
   vitePlugins: {
@@ -25,7 +32,7 @@ const teekConfig = defineTeekConfig({
     name: "Teek", // Banner 标题，默认读取 vitepress 的 title 属性
     bgStyle: "fullImg", // Banner 背景风格：pure 为纯色背景，partImg 为局部图片背景，fullImg 为全屏图片背景
     pureBgColor: "#28282d", // Banner 背景色，bgStyle 为 pure 时生效
-    imgSrc: ["/images/homepage-bg.png"], // Banner 图片链接。bgStyle 为 partImg 或 fullImg 时生效
+    imgSrc: ["/images/banner.png"], // Banner 图片链接。bgStyle 为 partImg 或 fullImg 时生效
     imgInterval: 15000, // 当多张图片时（imgSrc 为数组），设置切换时间，单位：毫秒
     imgShuffle: false, // 图片是否随机切换，为 false 时按顺序切换，bgStyle 为 partImg 或 fullImg 时生效
     imgWaves: true, // 是否开启 Banner 图片波浪纹，bgStyle 为 fullImg 时生效
