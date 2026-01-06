@@ -1,0 +1,27 @@
+kbd {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  margin: 0 0.2em;
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #2d3748;
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 #cbd5e0;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+  user-select: none;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    background-color: #edf2f7;
+    border-color: #a0aec0;
+    box-shadow: 0 2px 0 #a0aec0;
+  }
+
+  // 优化连续按键间距（如 Ctrl + C）
+  & + & {
+    margin-left: 0.4em;
+  }
+}

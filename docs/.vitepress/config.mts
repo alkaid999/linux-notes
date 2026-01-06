@@ -4,8 +4,7 @@ import { stepsPlugin } from "./plugins/steps"; // 导入步骤插件
 import { fieldPlugin } from "./plugins/field"; // 导入字段插件
 import timeline from "vitepress-markdown-timeline"; // 导入时间线插件
 import { vitepressMermaidPreview } from "vitepress-mermaid-preview"; // 导入 mermaid 插件
-// 导入导航栏和侧边栏
-import { nav } from "./config/nav.mts";
+import { nav } from "./config/nav.mts"; // 导航栏
 
 // Teek 主题配置
 const teekConfig = defineTeekConfig({
@@ -17,9 +16,9 @@ const teekConfig = defineTeekConfig({
   codeBlock: {
     langTextTransform: "capitalize", // 代码块语言文本转换为首字母大写
     collapseHeight: 700, // 折叠高度，超过此高度的代码块将折叠
-	overlay: true, // 代码块底部是否显示展开/折叠遮罩层
+    overlay: true, // 代码块底部是否显示展开/折叠遮罩层
     overlayHeight: 400, // 当出现遮罩层时，指定代码块显示高度，当 overlay 为 true 时生效
-	copiedDone: TkMessage => TkMessage.success("复制成功！"), // 复制成功提示
+    copiedDone: (TkMessage) => TkMessage.success("复制成功！"), // 复制成功提示
   },
   sidebarTrigger: true, // 开启边栏展开/折叠触发器
   articleUpdate: { enabled: false }, // 关闭文章最近更新栏
@@ -64,15 +63,15 @@ export default defineConfig({
   title: "My Awesome Project",
   description: "A VitePress Site",
   head: [
-    ["link", { rel: "icon", href: "/favicon.ico", type: "image/png" }],
+    ["link", { rel: "icon", href: "/favicon.ico", type: "image/png" }], // favicon
     [
       "link",
       {
         rel: "stylesheet",
-        href: "//at.alicdn.com/t/c/font_3243406_6oz2pxhn3ht.css",
+        href: "//at.alicdn.com/t/c/font_3243406_sk9b1fbzt8.css", // 配置 iconfont 图标
       },
     ],
-  ], // 配置 favicon
+  ], 
   // 配置 markdown 解析器
   markdown: {
     config: (md) => {
@@ -94,7 +93,8 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: nav,
+    nav: nav, // 导航栏
+    outline: [2, 3], // 侧边栏大纲深度，默认值为 [2, 4]
 
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
