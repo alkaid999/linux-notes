@@ -68,7 +68,7 @@ export default defineConfig({
       "link",
       {
         rel: "stylesheet",
-        href: "//at.alicdn.com/t/c/font_3243406_sk9b1fbzt8.css", // 配置 iconfont 图标
+        href: "//at.alicdn.com/t/c/font_3243406_csbxz52z397.css", // 配置 iconfont 图标
       },
     ],
   ], 

@@ -14,6 +14,7 @@
 .vp-doc .vp-steps > :where(ol,ul) {
   padding-inline-start: 0;
   list-style: none;
+  counter-reset: list-item;
 }
 
 .vp-doc .vp-steps > :where(ol,ul) > li {
@@ -22,6 +23,7 @@
   padding-left: 44px;
   margin-bottom: 16px;
   line-height: 28px;
+  counter-increment: list-item;
 }
 
 .vp-doc .vp-steps > :where(ol,ul) > li::before {
@@ -48,7 +50,7 @@
   font-family: 'LXGWWenKaiMono-Bold', 'Consolas Bold', 'Monaco Bold', 'Courier New Bold', monospace;
 }
 
-.vp-doc .vp-steps > :where(ol,ul) > li:not(:last-of-type)::after {
+.vp-doc .vp-steps > :where(ol,ul) > li::after {
   position: absolute;
   inset-inline-start: 14px;
   top: 34px;
